@@ -3,7 +3,7 @@ InvoryRaptor项目介绍
 
 系统为物联网云平台设计
 ## 1、逻辑组成部分
-<img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/postoffice.jpeg" alt="postoffice" title="postoffice" width="856" height="718" />
+<img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/postoffice.jpeg" alt="postoffice" title="postoffice" width="856" height="718" />
 
 ## 2、Angler
 为平台中最小的逻辑调度的单元，angler在平台中的位置类似于操作系统中的线程概念。一般为一个docker里封装的一个应用，运行在kubernetes pod中的一个执行某个微服务。
