@@ -53,4 +53,4 @@ mqttclientId | 12345|securemode=3,signmethod=hmacsha1,timestamp=789|
 username | device&pk
 password | hmacsha1("secret","clientId12345deviceNamedeviceproductKeypktimestamp789").toHexString();  
 
-//最后是二进制转16制字符串，大小写不敏感。 这个例子结果为 FAFD82A3D602B37FB0FA8B7892F24A477F851A14
+最后是二进制转16制字符串，大小写不敏感。 这个例子结果为 FAFD82A3D602B37FB0FA8B7892F24A477F851A14
