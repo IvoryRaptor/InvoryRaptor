@@ -2,7 +2,7 @@
 InvoryRaptor项目介绍
 
 系统为物联网云平台设计
-## 1、组成部分
+## 1、逻辑组成部分
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/postoffice.jpeg" alt="postoffice" title="postoffice" width="856" height="718" />
 
 ## 2、Angler
@@ -23,5 +23,8 @@ Matrix是平台中通道的配置，对应一种类型的设备。例如移动�
 ## 4、Project
 Project是一个应用单元，承担某个完整的应用场景。是平台中资源分配单元，一个Project中的所有angler程序共享存储、参数、状态等信息，类似于操作系统中的进程的概念。
 
+## PostOffice项目介绍
+[PostOffice](https://github.com/IvoryRaptor/InvoryRaptor/tree/master/postoffice)
+
 ## Zookeeper存储结构
-[Google](https://github.com/IvoryRaptor/InvoryRaptor/tree/master/zookeeper)
+[Zookeeper存储结构](https://github.com/IvoryRaptor/InvoryRaptor/tree/master/zookeeper)
