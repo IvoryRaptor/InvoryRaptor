@@ -18,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="134" lean-forward="false" selection-start-line="4" selection-start-column="134" selection-end-line="4" selection-end-column="134" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -71,7 +71,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
+    <option name="x" value="379" />
     <option name="y" value="24" />
     <option name="width" value="1440" />
     <option name="height" value="834" />
@@ -341,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527060799046</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="增加zookeeper结构说明文档">
+      <created>1527060840758</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1527060840758</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="24" width="1440" height="834" extended-state="0" />
+    <frame x="379" y="24" width="1440" height="834" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3518268" sideWeight="0.5171674" order="8" side_tool="true" content_ui="tabs" />
@@ -550,8 +557,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="134" lean-forward="false" selection-start-line="4" selection-start-column="134" selection-end-line="4" selection-end-column="134" />
             <folding />
           </first_editor>
           <second_editor />
