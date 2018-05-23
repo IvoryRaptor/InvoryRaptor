@@ -2,7 +2,7 @@
 InvoryRaptor项目介绍
 
 系统为物联网神经网络平台，使接入设备按照神经网络模式进行工作。
-<img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/nn.png" alt="system" title="system" width="856" height="718" />
+<img src="https://github.com/IvoryRaptor/InvoryRaptor/resource/nn.png" alt="system" title="system" width="856" height="718" />
 
 ## 1、逻辑组成部分
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/system.jpeg" alt="system" title="system" width="856" height="718" />

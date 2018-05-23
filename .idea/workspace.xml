@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f276a7e5-7b76-4e9a-adc9-89e90e0173f5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dev/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resource/nn.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -19,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -72,8 +72,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="28" />
+    <option name="x" value="31" />
+    <option name="y" value="24" />
     <option name="width" value="1440" />
     <option name="height" value="834" />
   </component>
@@ -104,6 +104,11 @@
               <item name="InvoryRaptor" type="b2602c69:ProjectViewProjectNode" />
               <item name="InvoryRaptor" type="462c0819:PsiDirectoryNode" />
               <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoryRaptor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoryRaptor" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524143021093</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="增加zookeeper结构说明文档">
+      <created>1527060745776</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1527060745776</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="28" width="1440" height="834" extended-state="0" />
+    <frame x="31" y="24" width="1440" height="834" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3518268" sideWeight="0.5171674" order="8" side_tool="true" content_ui="tabs" />
@@ -517,6 +529,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -524,14 +537,15 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
             <folding />
           </first_editor>
           <second_editor />
