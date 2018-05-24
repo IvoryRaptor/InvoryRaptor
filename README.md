@@ -4,8 +4,9 @@ InvoryRaptor项目介绍
 系统为物联网神经网络平台，使接入设备按照神经网络模式进行工作。物联网神经网络是一种模拟人脑的神经网络以期能够实现类人操控处理的能力。
 人脑中的神经网络是一个非常复杂的组织。成人的大脑中估计有1000亿个神经元之多。
 
+<div align=center>
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/dn.jpg" alt="system" title="system" width="265" height="187" />
-
+</div>
 
 
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/nn.png" alt="system" title="system" width="367" height="278" />
