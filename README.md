@@ -5,16 +5,15 @@ InvoryRaptor项目介绍
 人脑中的神经网络是一个非常复杂的组织。成人的大脑中估计有1000亿个神经元之多。
 <div align=center>
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/dn.jpg" alt="system" title="system" width="265" height="187" />
+<img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/sjy.jpg" alt="system" title="system" width="398" height="237" />
 </div>
 一个神经元通常具有多个树突，主要用来接受传入信息；而轴突只有一条，轴突尾端有许多轴突末梢可以给其他多个神经元传递信息。
 轴突末梢跟其他神经元的树突产生连接，从而传递信号。这个连接的位置在生物学上叫做“突触”。
 人脑对于事务的处理往往交给不同的神经元
-<div align=center>
-<img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/sjy.jpg" alt="system" title="system" width="398" height="237" />
-</div>
 从物联网角度来说，每个物品会发送不同类型的消息，而这些消息会被不同的"神经元"进行处理，处理的结果会传导到另一些"神经元中"
+<div align=center>
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/nn.png" alt="system" title="system" width="367" height="278" />
-
+</div>
 在本平台中的神经元叫做Angler，每个Angler负责处理某一类传导过来的信息，这些信息可能来自于输入层，也可能来自于其他Angler处理后的消息。
 ## 1、逻辑组成部分
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/system.jpeg" alt="system" title="system" width="856" height="718" />
