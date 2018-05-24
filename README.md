@@ -9,10 +9,10 @@ InvoryRaptor项目介绍
 一个神经元通常具有多个树突，主要用来接受传入信息；而轴突只有一条，轴突尾端有许多轴突末梢可以给其他多个神经元传递信息。
 轴突末梢跟其他神经元的树突产生连接，从而传递信号。这个连接的位置在生物学上叫做“突触”。
 人脑对于事务的处理往往交给不同的神经元
+<div align=center>
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/sjy.jpg" alt="system" title="system" width="398" height="237" />
-
-一个神经元通常具有多个树突，主要用来接受传入信息；而轴突只有一条，轴突尾端有许多轴突末梢可以给其他多个神经元传递信息。轴突末梢跟其他神经元的树突产生连接，从而传递信号。这个连接的位置在生物学上叫做“突触”。
-
+</div>
+从物联网角度来说，每个物品会发送不同类型的消息，而这些消息会被不同的"神经元"进行处理，处理的结果会传导到另一些"神经元中"
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/nn.png" alt="system" title="system" width="367" height="278" />
 
 ## 1、逻辑组成部分
