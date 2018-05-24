@@ -1,8 +1,10 @@
 # InvoryRaptor
-InvoryRaptor项目介绍
+项目介绍
 
-系统为全球首个物联网神经网络平台（IOTNN），使接入设备按照神经网络模式进行工作。物联网神经网络是一种模拟人脑的神经网络以期能够实现类人操控处理的能力。
-人脑中的神经网络是一个非常复杂的组织。成人的大脑中估计有1000亿个神经元之多。
+InvoryRaptor平台为全球首个开源的物联网神经网络平台（IOTNN），打造一个使物联网设备集群按照神经网络模式进行运行的平台，
+通过模拟人脑的神经网络以期能够实现类人操控处理的能力。
+首先先分析一下人体对于感知外部事物并响应的过程，人体具备大量的传感器设备（眼、耳、鼻、舌、身），大量的"传感器"将大量的数据传输到大脑中进行处理，
+这个传感器网络也就是人体的物联网，通过人脑进行处理，并得出结论及指导行动。人脑是由神经元组成的神经网络，神经网络是一个非常复杂的组织（成人的大脑中估计有1000亿个神经元之多）。
 <div align=center>
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/dn.jpg" alt="system" title="system" width="265" height="187" />
 <img src="https://github.com/IvoryRaptor/InvoryRaptor/blob/master/resource/sjy.jpg" alt="system" title="system" width="398" height="237" />
