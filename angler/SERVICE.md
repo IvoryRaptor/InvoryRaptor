@@ -1,4 +1,4 @@
-# angler自定义服务
+# Angler自定义服务
 > 自定义service同样存储在services目录中，每个类，必须显性或隐性的继承自angler.IService
 继承自angler.IService的类必须实现以下4个函数：
 
