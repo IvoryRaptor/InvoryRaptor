@@ -9,3 +9,7 @@ Angler向外提供服务的方式为两种：
 一般情况下相同的angler在matrix可运行多个副本，提供负载均衡能力。几个副本的angler中有一个为主angler，
 某些特殊任务（如微信更换token，由主angler完成），其他angler为辅angler。当主angler关闭或出现异常时，副angler中将自动选举出一个为新的主master。
 
+
+
+
+[配置文件说明](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/CONFIG.md)
