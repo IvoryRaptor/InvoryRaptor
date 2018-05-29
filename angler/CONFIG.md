@@ -38,7 +38,8 @@ project     表示应用所在的项目集群，多个matrix共享project的资�
 services    存储不同service的配置，子节点名称与service中的__init__.py中定义的对象名称相同。
             （注意：就算不需要配置文件，此处也需要有对应节点，否则该服务不会被加载到系统中，不会被执行）
 session     系统使用的session的配置，目前session只支持redis
-
+source      消息来源，type指定消息源类型，默认为kafka。
+sync        数据同步模块类型，消息转发时需要订阅zookeeper消息。
 
 ## 2、日志配置文件
 位置/config/log/logging.conf
@@ -72,6 +73,7 @@ args=(sys.stdout,)
 format=[%(levelname)s] %(asctime)s %(name)s %(message)s
 datefmt=
 ```
-Angler各模块拥有自己的日志输出命名空间，在此处配置可以将各模块区分开，
+Angler各模块拥有自己的日志输出命名空间，在此处配置可以将各模块区分开，以方便精确获取不同类型等级的消息。
+
 ## 3、其他配置文件
 其他配置文件，需放置在应用的config目录中。以服务名称对应目录名
