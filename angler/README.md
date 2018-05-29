@@ -10,6 +10,10 @@ Angler向外提供服务的方式为两种：
 某些特殊任务（如微信更换token，由主angler完成），其他angler为辅angler。当主angler关闭或出现异常时，副angler中将自动选举出一个为新的主master。
 
 
+[目录结构说明](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/DIR.md)
 
+[开发说明](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/DEV.md)
 
 [配置文件说明](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/CONFIG.md)
+
+[发布说明](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/PUBLISH.md)

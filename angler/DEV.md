@@ -1,24 +1,35 @@
-# Angler应用程序目录结构
-## 启动代码
-一般情况下，angler应用目录下，具备几个启动程序，分别是：
+# Angler应用开发
+## 1、概述
+在本平台中由POSTOFFICE将信息根据设备类型及信息类型进行分类，传递给不同的"神经元"组中进行处理（平台中的神经元叫做Angler）。
 
-dev.py      开发调试用的代码，代码中会配置main.py文件中启动程序所需要的变量值，并调用main.py中的启动代码
+## 2、添加Resource
+例如：定义Resource admin类
 
-main.py     程序启动代码，主要包含根据传入参数修改配置文件，并启动程序angler应用
+1、那么需要建立admin.py文件。文件名全小写，如果是两个单词组成，则之间用_分割。
 
-release.py  docker启动代码，将环境变量传入main.py的启动函数中，并启动应用程序。
-
-## resources 资源
-配置resources响应服务，每个文件包含一个resource服务，文件名与其中的类相对应：
-
-文件名即resources名称，全为小写，单词间用_隔开。
-
-类名称用驼峰编码法，各单词首字母大写，其余字母小写。类要求直接或间接从angler.MQHandler继承
-其中实现的函数即与消息中的action相同。
+2、然后书写如下代码：
+```
+from angler.handlers import MQHandler
 
 
-当有admin.login消息到达时，该函数将响应该消息。
-获取消息的其他内容，下表如下：
+class AdminMQ(MQHandler):
+    pass
+```
+类名称用驼峰编码法，各单词首字母大写，其余字母小写。类要求直接或间接从angler.MQHandler继承。
+
+
+## 3、添加Action
+定义与action同名的函数，以处理该类型的消息。
+```
+from angler.handlers import MQHandler
+
+
+class AdminMQ(MQHandler):
+    def login():
+        pass
+```
+
+### 3.1、 处理代码中，可以使用如下方式，获取消息内容：
 
 名称 | 类型 | 描述
 ---- | --- | ---
@@ -35,11 +46,20 @@ self.payload | byte[] | 附加数据
 以上变量都是由MQHandler所提供的，在系统中还有其他一些MQHandler会重载或扩展其他的类型。
 其中还包括一些基本功能函数。
 
+### 3.2、使用session
 
-### resource访问装饰器定义
-系统中定义了几种针对resource权限访问的装饰器
+### 3.3、发送消息
 
-#### 基于session的权限控制
+#### 3.3.1、回复消息
+
+#### 3.3.2、发送
+
+
+
+## 4、添加访问限制
+系统中以装饰器限制resource及其action是否可访问的控制，
+
+### 4.1 基于session的权限控制
 在设备对应的session中，加入设备可调用的resource及对应的action。
 在设备的session的permissions键上存储对应的支持的动作列表：admin.login等
 有两种修饰方法，可以修饰在resource对应的函数上，也可以修饰在resource的类上，
@@ -74,13 +94,8 @@ class MenuMQ(MQJsonHandler):
         })
 ```
 
-#### 基于契约的权限控制
+### 4.2 基于契约的权限控制
 分别为mongo_contract_class及分别为mongo_contract_func。
 
 
- 
-## services 服务
-该目录中包含包文件__init__.py
-该文件中，包含resources中应用的外部资源，如mongodb数据库、关系型数据库等资源。
-
-## config 配置文件
+### 5 自定义service
