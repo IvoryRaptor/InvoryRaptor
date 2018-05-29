@@ -85,12 +85,15 @@ value | any | 变量对应的值
 
 
 ## 4、添加访问限制
-系统中以装饰器限制resource及其action是否可访问的控制，
+>系统中以装饰器限制resource及其action是否可访问的控制，
 
 ### 4.1 基于session的权限控制
 在设备对应的session中，加入设备可调用的resource及对应的action。
+
 在设备的session的permissions键上存储对应的支持的动作列表：admin.login等
+
 有两种修饰方法，可以修饰在resource对应的函数上，也可以修饰在resource的类上，
+
 分包修饰符为session_permissions_class和session_permissions_func
 ```
 @session_permissions_class
@@ -123,7 +126,7 @@ class MenuMQ(MQJsonHandler):
 ```
 
 ### 4.2 基于契约的权限控制
-分别为mongo_contract_class及分别为mongo_contract_func。
+>分别为mongo_contract_class及分别为mongo_contract_func。
 
 
 ### 5 自定义service
