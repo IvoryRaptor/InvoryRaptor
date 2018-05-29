@@ -129,10 +129,10 @@ class MenuMQ(MQJsonHandler):
 >分别为mongo_contract_class及分别为mongo_contract_func。
 
 
-### 5 自定义service
+## 5 自定义service
 
 
-### 6 获取设备连接的POSTOFFICE地址
+## 6 获取设备连接的POSTOFFICE地址
 函数名：*find_postoffice*
 
 名称 | 类型 | 描述

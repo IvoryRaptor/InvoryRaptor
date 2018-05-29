@@ -18,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/angler/DEV.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="398">
-                <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <first_editor relative-caret-position="2010">
+                <caret line="134" column="2" lean-forward="true" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -191,20 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524116481758</updated>
-    </task>
-    <task id="LOCAL-00010" summary="创建项目">
-      <created>1524120047060</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1524120047060</updated>
-    </task>
-    <task id="LOCAL-00011" summary="创建项目">
-      <created>1524121216853</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1524121216853</updated>
     </task>
     <task id="LOCAL-00012" summary="创建项目">
       <created>1524122469647</created>
@@ -535,7 +521,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527581370239</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="单独分离Angler的CONFIG消息">
+      <created>1527581432050</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1527581432051</updated>
+    </task>
+    <task id="LOCAL-00060" summary="单独分离Angler的CONFIG消息">
+      <created>1527581464955</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1527581464955</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -822,8 +822,8 @@
     <entry file="file://$PROJECT_DIR$/angler/DEV.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="398">
-            <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <first_editor relative-caret-position="2010">
+            <caret line="134" column="2" lean-forward="true" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
             <folding />
           </first_editor>
           <second_editor />
