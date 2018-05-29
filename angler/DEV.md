@@ -77,11 +77,19 @@ value | any | 变量对应的值
 
 
 ### 3.3、发送消息
-
+>将消息发送给其他Angler，或者发送给设备端
 #### 3.3.1、回复消息
 
 #### 3.3.2、发送
+函数名：reply
 
+参数：
+
+名称 | 类型 | 默认值 |描述  
+---- | --- | --- | ---
+resource | string | 处理消息的resource | 消息的resource
+action | string | _ + 处理消息的action | 消息的action
+payload | byte[] |  | 附加数据
 
 
 ## 4、添加访问限制
@@ -94,7 +102,7 @@ value | any | 变量对应的值
 
 有两种修饰方法，可以修饰在resource对应的函数上，也可以修饰在resource的类上，
 
-分包修饰符为session_permissions_class和session_permissions_func
+分包修饰符为session_permissions_class
 ```
 @session_permissions_class
 class MenuMQ(MQJsonHandler):
@@ -109,7 +117,10 @@ class MenuMQ(MQJsonHandler):
             {'order': 1}
         )
     })
-    
+```
+
+session_permissions_func
+```
 class MenuMQ(MQJsonHandler):
     @session_permissions_func
     def all(self):
@@ -126,11 +137,43 @@ class MenuMQ(MQJsonHandler):
 ```
 
 ### 4.2 基于契约的权限控制
->分别为mongo_contract_class及分别为mongo_contract_func。
+>用于控制设备A是否可以调用设备B的Resource的Action，分别为mongo_contract_class及分别为mongo_contract_func。
 
 
-## 5 自定义service
+## 5 service
+>service为各resource提供统一的外部服务，如数据库、zookeeper、redis等
 
+### 5.1 使用service
+> 系统中所有resource调用的外部资源都应在service的包文件(__init__)中定义
+
+
+### 5.2 自定义service
+> 自定义service同样存储在services目录中，每个类，必须显性或隐性的继承自angler.IService
+继承自angler.IService的类必须实现以下4个函数：
+
+#### 5.2.1 构造函数
+```
+def __init__(self):
+    IService.__init__(self, name)
+```
+需要调用IService的构造函数，需要传入服务名称。方便模块日志输出，模块日志命名空间为angler.模块名
+
+
+#### 5.2.2 配置函数
+函数名：*config*
+参数：conf，Angler配置文件中对应节点的内容
+用于初始化部分需要准备的内容，该函数执行在start之前。这么设计的目的在于，
+避免由于配置文件错误导致某些模块被初始化导致系统不稳定。
+
+#### 5.2.3 启动服务函数
+函数名：*start*
+参数：angler，Angler系统对象，系统对象集合。
+启动服务，服务启动完成后，服务应该可以被resource各部分调用。
+
+#### 5.2.4 停止服务函数
+函数名：*stop*
+参数：无
+系统停止运行时会被调用，做一下析构操作。
 
 ## 6 获取设备连接的POSTOFFICE地址
 函数名：*find_postoffice*
