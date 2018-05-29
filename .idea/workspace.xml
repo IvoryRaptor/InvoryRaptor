@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f276a7e5-7b76-4e9a-adc9-89e90e0173f5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/angler/DEV.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/angler/PUBLISH.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/angler/DIR.md" afterPath="$PROJECT_DIR$/angler/DIR.md" />
-      <change beforePath="$PROJECT_DIR$/angler/README.md" afterPath="$PROJECT_DIR$/angler/README.md" />
+      <change beforePath="$PROJECT_DIR$/angler/DEV.md" afterPath="$PROJECT_DIR$/angler/DEV.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,25 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CONFIG.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angler/CONFIG.md">
+      <file leaf-file-name="DEV.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angler/DEV.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
-                <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angler/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <first_editor relative-caret-position="353">
+                <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -78,9 +62,9 @@
         <option value="$PROJECT_DIR$/MESSAGE.md" />
         <option value="$PROJECT_DIR$/angler/CONFIG.md" />
         <option value="$PROJECT_DIR$/angler/DIR.md" />
-        <option value="$PROJECT_DIR$/angler/DEV.md" />
         <option value="$PROJECT_DIR$/angler/PUBLISH.md" />
         <option value="$PROJECT_DIR$/angler/README.md" />
+        <option value="$PROJECT_DIR$/angler/DEV.md" />
       </list>
     </option>
   </component>
@@ -98,7 +82,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="134" />
+    <option name="x" value="72" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
@@ -207,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524116481758</updated>
-    </task>
-    <task id="LOCAL-00004" summary="创建项目">
-      <created>1524118798939</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1524118798939</updated>
     </task>
     <task id="LOCAL-00005" summary="创建项目">
       <created>1524118809459</created>
@@ -551,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527574178995</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="单独分离Angler的CONFIG消息">
+      <created>1527577674214</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1527577674214</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="23" width="1440" height="811" extended-state="0" />
+    <frame x="72" y="23" width="1440" height="811" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14385475" sideWeight="0.5343348" order="8" side_tool="true" content_ui="tabs" />
@@ -769,17 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angler/DEV.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="472">
-            <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angler/PUBLISH.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -824,22 +797,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angler/CONFIG.md">
+    <entry file="file://$PROJECT_DIR$/angler/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angler/README.md">
+    <entry file="file://$PROJECT_DIR$/angler/CONFIG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angler/DEV.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="353">
+            <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

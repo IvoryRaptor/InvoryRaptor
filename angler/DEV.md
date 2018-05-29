@@ -47,6 +47,14 @@ self.payload | byte[] | 附加数据
 其中还包括一些基本功能函数。
 
 ### 3.2、使用session
+#### 3.2.1、获取Session
+函数名：   get_session
+
+>参数：     key         存储在session中的变量名
+
+[TAB][TAB]default     默认值，当变量不存在时，返回该变量
+          
+
 
 ### 3.3、发送消息
 
