@@ -47,16 +47,33 @@ self.payload | byte[] | 附加数据
 其中还包括一些基本功能函数。
 
 ### 3.2、使用session
+> Session 在平台中为每个设备提供状态保持的存储。每台设备在在线的全生命周期中，不同Angler种共享Session
+
 #### 3.2.1、获取Session
-函数名：   get_session
+函数名：get_session
+
+参数：
+
+名称 | 类型 | 描述
+---- | --- | ---
+key | string | session中的变量名
+default | any | 默认值，当变量不存在时，返回该变量
+
+#### 3.2.2、存储Session
+函数名：set_session
 
 参数：
 
 名称 | 类型 | 描述
 ---- | --- | ---
 key | string | 存储在session中的变量名
-default | any | 默认值，当变量不存在时，返回该变量
-          
+value | any | 变量对应的值
+
+#### 3.2.3、清除Session
+函数名：clear_session
+
+*注意：程序需要手工清除session，这是因为当设备离线时，Angler可以收到离线消息(device.offline)，处理离线后的事情，
+如果session自动被清理，则会引发程序无法获取设备运行时的状态等内容。*
 
 
 ### 3.3、发送消息
