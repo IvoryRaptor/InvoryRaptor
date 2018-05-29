@@ -139,4 +139,5 @@ class MenuMQ(MQJsonHandler):
 ---- | --- | ---
 matrix | string | matrix名称
 device | string | 设备名称
+
 返回POSTOFFICE服务编号，如果设备不在线，返回None
