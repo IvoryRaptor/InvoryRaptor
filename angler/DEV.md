@@ -88,69 +88,24 @@ value | any | 变量对应的值
 名称 | 类型 | 默认值 |描述  
 ---- | --- | --- | ---
 resource | string | 处理消息的resource | 消息的resource
-action | string | _ + 处理消息的action | 消息的action
-payload | byte[] |  | 附加数据
+action | string | _处理消息的action | 消息的action
+payload | byte[] | 空数组 | 附加数据
 
 
-## 4、添加访问限制
+## 4、访问限制
 >系统中以装饰器限制resource及其action是否可访问的控制，
+[详见](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/WRAPPER.md)
 
-### 4.1 基于session的权限控制
-在设备对应的session中，加入设备可调用的resource及对应的action。
-
-在设备的session的permissions键上存储对应的支持的动作列表：admin.login等
-
-有两种修饰方法，可以修饰在resource对应的函数上，也可以修饰在resource的类上，
-
-分包修饰符为session_permissions_class
-```
-@session_permissions_class
-class MenuMQ(MQJsonHandler):
-    def all(self):
-    permissions = self.get_session('permissions')
-    self.reply({
-        "data": mongo.find(
-            MONGODB_COLLECTION,
-            {
-                'permission': {'$in': permissions}
-            },
-            {'order': 1}
-        )
-    })
-```
-
-session_permissions_func
-```
-class MenuMQ(MQJsonHandler):
-    @session_permissions_func
-    def all(self):
-        permissions = self.get_session('permissions')
-        self.reply({
-            "data": mongo.find(
-                MONGODB_COLLECTION,
-                {
-                    'permission': {'$in': permissions}
-                },
-                {'order': 1}
-            )
-        })
-```
-
-### 4.2 基于契约的权限控制
->用于控制设备A是否可以调用设备B的Resource的Action，分别为mongo_contract_class及分别为mongo_contract_func。
-
-
-## 5 service
+## 5、service
 >service为各resource提供统一的外部服务，如数据库、zookeeper、redis等
 
-### 5.1 使用service
-> 系统中所有resource调用的外部资源都应在service的包文件(\_\_init\_\_)中定义
+### 5.1、使用service
+>系统中所有resource调用的外部资源都应在service的包文件(\_\_init\_\_)中定义
 
-
-### 5.2 自定义service
+### 5.2、自定义service
 [详见](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/SERVICE.md)
 
-## 6 获取设备连接的POSTOFFICE地址
+## 6、获取设备连接的POSTOFFICE地址
 函数名：*find_postoffice*
 
 名称 | 类型 | 描述
