@@ -50,9 +50,12 @@ self.payload | byte[] | 附加数据
 #### 3.2.1、获取Session
 函数名：   get_session
 
->参数：     key         存储在session中的变量名
+参数：
 
-[TAB][TAB]default     默认值，当变量不存在时，返回该变量
+名称 | 类型 | 描述
+---- | --- | ---
+key | string | 存储在session中的变量名
+default | any | 默认值，当变量不存在时，返回该变量
           
 
 
