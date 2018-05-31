@@ -92,6 +92,12 @@ action | string | _处理消息的action | 消息的action
 payload | byte[] | 空数组 | 附加数据
 
 
+### 3.4、其他MQHandler
+
+
+### 3.5、MQHandler扩展
+
+
 ## 4、访问限制
 >系统中以装饰器限制resource及其action是否可访问的控制，
 [详见](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/WRAPPER.md)
@@ -102,11 +108,21 @@ payload | byte[] | 空数组 | 附加数据
 ### 5.1、使用service
 >系统中所有resource调用的外部资源都应在service的包文件(\_\_init\_\_)中定义
 
+```
+from angler.services.mongo import MongoDatabase
+
+
+mongo = MongoDatabase('mongodb')
+
+```
+
 ### 5.2、自定义service
 [详见](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/angler/SERVICE.md)
 
 ## 6、获取设备连接的POSTOFFICE地址
 函数名：*find_postoffice*
+
+参数：
 
 名称 | 类型 | 描述
 ---- | --- | ---
@@ -114,3 +130,14 @@ matrix | string | matrix名称
 device | string | 设备名称
 
 返回POSTOFFICE服务编号，如果设备不在线，返回None
+
+## 7、主节点运行函数
+函数名：*master_func*
+
+参数：
+名称 | 类型 | 描述
+---- | --- | ---
+func | func | 主节点时运行的函数
+
+angler应用程序在kubernetes集群中运行时，可以运行多个副本。但有些操作只需要一个副本运行，多副本都运行，反而会出问题
+（比如与微信服务器端更换token）。此时需要主副本运行，并且当主副本失效时，其他副本中有且仅有一个副本会成为主副本继续运行。
