@@ -20,3 +20,5 @@
 </div>
 　　在本平台中由POSTOFFICE将信息根据设备类型及信息类型进行分类，传递给不同的"神经元"组中进行处理（平台中的神经元叫做Angler）。
 处理的结果传递给其他相关的"神经元"。以此类推，最终得到记忆（存储）以及反应（输出）等结果信息。
+
+[项目逻辑结构](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/STRUCTURE.md)
