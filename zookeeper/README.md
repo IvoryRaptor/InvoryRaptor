@@ -11,6 +11,8 @@
 [angler运行状态](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/ANGLER.md)
 
 ## 3 IOTNN转发规则结构
-消息除了指定Topic以外，还可以通过Zookeeper配置PostOffice以及Dance的转发规则。
+>> PostOffice通过Zookeeper配置。决定消息来到时转发到哪个TOPIC
 [Zookeeper中Postoffice转发规则结构](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/POSTOFFICE.md)
+
+>> Dance发送消息时，除指定的Topic以外，还需要转发到哪些TOPIC。
 [Zookeeper中Dance转发规则结构](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/DANCE.md)
