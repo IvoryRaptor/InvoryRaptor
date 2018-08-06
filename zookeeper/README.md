@@ -12,7 +12,5 @@
 
 ## 3 IOTNN转发规则结构
 消息除了指定Topic以外，还可以通过Zookeeper配置PostOffice以及Dance的转发规则。
-[Zookeeper中Postoffice转发规则结构]
-(https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/POSTOFFICE.md)
-[Zookeeper中Dance转发规则结构]
-(https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/DANCE.md)
+[Zookeeper中Postoffice转发规则结构](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/POSTOFFICE.md)
+[Zookeeper中Dance转发规则结构](https://github.com/IvoryRaptor/InvoryRaptor/blob/master/zookeeper/DANCE.md)
